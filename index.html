@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+  <section class="conteudo-imagens">
+    <img class="conteudo-imagens-imagem" src="images/icone-balanca.png" alt="icone">
+</section>
+    <div class = container>
+        <h2>Calculadora IMC</h2>
+        <div class="form-inputs">
+            <div class="form-control">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+            <div class="form-control">
+              <label for="height">Altura:</label>
+              <input
+                type="number"
+                id="height"
+                placeholder="Exemplo 1,75"
+                step="0.010"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="weight">Peso:</label>
+              <input
+                type="number"
+                id="weight"
+                placeholder="Exemplo 70,5"
+                step="0.010"
+                required
+              />
+            </div>
+          </div>
+          <div class="action-control">
+            <button id="btn_calcular" type="button-calcular" value="Calcular" >Calcular</button>
+          </div>
+        </div>
+        <div class="conteudo-calculadora-resultado" id="resultado"></div>
+        <div class="conteudo-calculadora-imagem-resultado" id="imagemresultado"></div>
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
